@@ -7,15 +7,74 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive card details form</title>
-
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="font-[Space_Grotesk]">
+  <!--Main Container-->
+  <div class="h-[100vh] w-[100vw] flex justify-center items-center">
+    <!--Main Page-->
+    <div class=" h-[100vh]  sm:w-[375px] lg:w-[1440px]">
+      <!--Wrapper-->
+       <div class="grid sm:grid-cols-1 sm:grid-rows-[285px_420px] lg:grid-rows-[100vh] lg:grid-cols-[710px_735px]">
+        <div class="relative sm:h-[240px] sm:bg-[url(/images/bg-main-mobile.png)] lg:w-[485px] lg:h-[100vh] lg:bg-[url(/images/bg-main-desktop.png)]">
+          <!--Card Back-->
+          <div class="absolute shadow-2xl sm:top-7 sm:left-15 bg-[url(/images/bg-card-back.png)] bg-no-repeat bg-cover rounded-xl sm:w-[285px] sm:h-[155px] lg:h-[245px] lg:w-[445px] lg:translate-y-80 lg:translate-x-50">
 
+          </div>
+          <!--Card Front-->
+          <div class="absolute text-white gap-5 flex flex-col justify-between shadow-2xl p-5 sm:top-30 sm:translate-x-4 bg-[url(/images/bg-card-front.png)] bg-no-repeat bg-cover rounded-xl sm:w-[285px] sm:h-[155px] lg:h-[245px] lg:w-[445px] lg:-translate-y-6 lg:translate-x-44">
+      
+              <img src="./images/card-logo.svg" class="sm:w-15 sm:h-8" alt="">
+              <div class="text-center">
+              <p class="text-[18px] tracking-widest mb-2 lg:text-3xl">0000 0000 0000 0000</p>
+              <div class="flex justify-between">
+              <p class="text-[12px] lg:text-[15px]">Roni Sore</p>
+              <p class="text-[12px] lg:text-[15px]">00/00</p>
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Section 2-->
+        <div class=" bg-white flex justify-center  lg:items-center lg:mr-20 mt-7">
+          <form action="" id="form" class="flex flex-col gap-5 sm:w-[340px]">
+            <label for="cardholder" class="uppercase text-[13px] font-medium">cardholder name</label>
+            <input type="text" name="cardholder" id="cardholder" placeholder="e.g. Jane Appleseed" class="border-1  border-neutral-gray-400 placeholder:text-neutral-gray-200 rounded-xl p-4 sm:w-[325px] sm:h-[45px] lg:w-[380px]">
+
+            <label for="cardnumber" class="uppercase text-[13px] font-medium">cardholder name</label>
+            <input type="text" name="cardnumber" id="cardnumber" placeholder=" e.g. 1234 5678 9123 0000" class="border-1 border-neutral-gray-400 placeholder:text-neutral-gray-200 rounded-xl p-4 sm:w-[325px] sm:h-[45px lg:w-[380px]">
+
+            <div class="grid grid-rows-[30px_40px] grid-cols-[72px_72px_160px] gap-x-2 lg:gap-x-5">
+              <label for="month" class="col-span-2 text-[13px] font-medium uppercase">Exp. Date (MM/YY)</label>
+              <label for="cvc" class=" col-start-3 text-[13px] font-medium"> CVC</label>
+               
+              <input type="text" name="month" id="month" placeholder="MM" class="w-[72px] rounded-xl p-4 border-1 border-neutral-gray-400 placeholder:text-neutral-gray-200 h-[40px] lg:w-[78px]">
+              <input type="text" name="year" id="year" placeholder="YY" class=" w-[72px] rounded-xl p-4 border-1 border-neutral-gray-400 placeholder:text-neutral-gray-200 h-[40px] lg:w-[78px]">
+              <input type="text" name="cvc" id="cvc" placeholder="  e.g. 123" class="w-[160px] rounded-xl p-4 border-1 border-neutral-gray-400 placeholder:text-neutral-gray-200 h-[40px] lg:w-[195px]">
+            </div>
+
+            <button id="confirm-btn" type="submit" class="w-[320px] h-[50px] p-2 lg:w-[380px] bg-neutral-purple-950 text-white rounded-xl">Confirm</button>
+          </form>
+
+        </div>
+       </div>
+
+    </div>
+
+  </div>
+
+
+
+<!-- 
   0000 0000 0000 0000
   Jane Appleseed
   00/00
@@ -35,17 +94,19 @@
   CVC
   e.g. 123
 
-  Confirm
+  Confirm -->
 
   <!-- Completed state start -->
 
-  Thank you!
+  <!-- Thank you!
   We've added your card details
-  Continue
+  Continue -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
+
   </div>
+<script src="app.js"></script>
 </body>
 </html>
