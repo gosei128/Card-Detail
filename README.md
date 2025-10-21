@@ -31,7 +31,7 @@ Users are able to:
 
 ### Screenshot
 
-![Alt text](./thumbnail/Credit-Card.png)
+![./thumbnail/Credit-Card.png]()
 
 
 ### Links
