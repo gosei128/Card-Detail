@@ -31,7 +31,8 @@ Users are able to:
 
 ### Screenshot
 
-![./thumbnail/Credit-Card.png]()
+![Credit Card Screenshot](https://github.com/gosei128/Card-Detai/blob/main/thumbnail/Credit-Card.png?raw=true)
+
 
 
 ### Links
