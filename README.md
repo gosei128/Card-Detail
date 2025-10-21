@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive card details form solution
 
-This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,8 +13,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-
-
 
 ## Overview
 
@@ -31,9 +29,7 @@ Users are able to:
 
 ### Screenshot
 
-![Credit Card Screenshot](./thumbnail/Credit-Card.png)
-
-
+![Credit Card Screenshot](./thumnail/Credit-Card.png)
 
 ### Links
 
@@ -51,21 +47,15 @@ Users are able to:
 - Mobile-first workflow
 - [Tailwindcss](https://tailwindcss.com/) - Tailwind Docs
 
-
-
 ### What I learned
 
 I learned a lot in form validation, creating a pattern for my input elements by using Javascript RegExp and finally understand positions like relative and absolute
-
 
 ### Continued development
 
 I continue developing in tailwind css getting familiar on utilies. Practicing more in javascript and still learning
 
-
 ## Author
 
 - Website - [Roni Sore](https://www.your-site.com)
 - Frontend Mentor - [@gosei123](https://www.frontendmentor.io/profile/gosei128)
-
-
